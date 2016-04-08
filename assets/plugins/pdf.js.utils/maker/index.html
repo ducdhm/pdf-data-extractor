@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+  	<title>Test PDF Creator</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="pdf.js"></script>
+    <script type="text/javascript" src="maker.js"></script>
+    <link rel="stylesheet" href="maker.css"/>
+  </head>
+	<body>
+  	<div id="controls">
+      <table>
+        <tr>
+          <td width="200px">
+            Font Ref <br><small>(id e.g. 5)</small>
+          </td>
+          <td>
+            <input id="ref" type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Operators <br><small>(on creation each line is wrapped with quotes and parsed with JSON.parse() so you can do things like a\u0009bc)</small>
+          </td>
+          <td>
+            <textarea id="text" rows="5">BT
+10 20 TD
+/F1 20 Tf
+(hello world) Tj
+ET
+</textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="file" id="file" name="file"/>
+          </td>
+        </tr>
+      </table>
+      <button id="go">Go</button>
+    </div>
+	</body>
+<html>

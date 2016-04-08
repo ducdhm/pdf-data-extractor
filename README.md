@@ -1,2 +1,2 @@
-# pdf-data-extractor
-Extract PDF data: font, color, boxes and OCG information
+# PDF Data Extractor
+Extract PDF data include font, color, boxes and OCG information by using [pdf.js.utils](https://github.com/brendandahl/pdf.js.utils)
